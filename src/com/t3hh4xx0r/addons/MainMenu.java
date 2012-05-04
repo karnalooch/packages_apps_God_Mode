@@ -222,6 +222,10 @@ public class MainMenu extends PreferenceActivity  {
                                 log("Setting device as " + DeviceType.ACE);
                                 Constants.setDeviceScript(DeviceType.ACE_SCRIPT);
                                 DeviceType.DEVICE_TYPE = DeviceType.ACE;
+                        }else  if (DeviceType.deviceDeviceEquals(DeviceType.pecan)) {
+                                log("Setting device as " + DeviceType.pecan);
+                                Constants.setDeviceScript(DeviceType.pecan_SCRIPT);
+                                DeviceType.DEVICE_TYPE = DeviceType.pecan; 
                         }
         }		
 	}
